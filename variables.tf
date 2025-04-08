@@ -9,6 +9,17 @@ variable "url" {
   description = "The URL of the remote repository to be mirrored"
 }
 
+variable "auth_method" {
+  type        = string
+  default     = "password"
+  description = "Determines the mirror authentication method"
+
+  validation {
+    condition     = contains(["ssh_public_key", "password"], var.auth_method)
+    error_message = "Valid values are ssh_public_key, password"
+  }
+}
+
 variable "enabled" {
   type        = bool
   default     = true

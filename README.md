@@ -30,7 +30,7 @@ module "gitlab_project" {
 
 module "gitlab_project_mirror" {
   source  = "gitlab.com/terraform-child-modules-48151/terraform-gitlab-project-mirror/local"
-  version = "1.0.0"
+  version = "1.1.0"
 
   project = module.gitlab_project.id
   url     = "https://username:password@github.com/example-project"
@@ -65,6 +65,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_auth_method"></a> [auth\_method](#input\_auth\_method) | Determines the mirror authentication method | `string` | `"password"` | no |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Determines if the mirror is enabled | `bool` | `true` | no |
 | <a name="input_keep_divergent_refs"></a> [keep\_divergent\_refs](#input\_keep\_divergent\_refs) | Determines if divergent refs are skipped | `bool` | `false` | no |
 | <a name="input_only_protected_branches"></a> [only\_protected\_branches](#input\_only\_protected\_branches) | Determines if only protected branches are mirrored | `bool` | `false` | no |
