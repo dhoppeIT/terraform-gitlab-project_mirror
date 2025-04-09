@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-project_mirror/compare/v1.1.0...v1.1.1) (2025-04-09)
+
+### Bug Fixes
+
+* **terraform:** Ignore changes to mirror_branch_regex ([8fa350a](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-project_mirror/commit/8fa350ab80b8616326155e729e472e99636d5b7b))
+
 ## [1.1.0](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-project_mirror/compare/v1.0.0...v1.1.0) (2025-04-08)
 
 ### Features
